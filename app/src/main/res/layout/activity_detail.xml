@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".DetailActivity"
+    android:background="@color/ungmud"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/judulGame"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/gamename"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:textColor="@color/purple_700"
+            />
+
+        <ImageView
+            android:id="@+id/gambarGame"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:src="@drawable/logo1" />
+
+
+
+        <TextView
+            android:id="@+id/descgame"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_gravity="center"
+
+            android:textColor="@color/purple_500"
+            android:text="@string/game_desc"
+            android:textSize="14sp" />
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="16dp"
+
+            >
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+                    android:text="Price            :"
+                    android:textColor="@color/purple_500"
+                    />
+
+                <TextView
+                    android:textColor="@color/purple_500"
+                    android:id="@+id/hargagame"
+                    android:layout_width="207dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+
+
+                    android:text="@string/gameprice"
+                    android:textSize="14sp" />
+
+            </TableRow>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:textSize="14sp"
+
+                    android:text="Rating          :"
+                    android:textColor="@color/purple_500"
+                    />
+
+                <TextView
+                    android:id="@+id/ratinggame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+
+                    android:textSize="14sp"
+                    android:textColor="@color/purple_500"
+                    android:text="@string/game_rate" />
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="16dp"
+                    android:text="Developer   :"
+                    android:textSize="14sp"
+                    android:textColor="@color/purple_500"
+
+                    />
+
+
+                <TextView
+                    android:id="@+id/developergame"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+
+                    android:textColor="@color/purple_500"
+                    android:text="@string/gamedev"
+                    android:textSize="14sp" />
+
+            </TableRow>
+        </TableLayout>
+
+        <Button
+            android:id="@+id/buttonshare"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:layout_marginTop="100dp"
+            android:text="@string/share" />
+    </LinearLayout>
+
+
+</ScrollView>
